@@ -1,10 +1,11 @@
 {
   "compilerOptions": {
-    "target": "ES2018",
+    "target": "es2018",
     "lib": ["es5", "es6", "ES2018"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
     "module": "commonjs",
     "moduleResolution": "node",
-    "typeRoots": ["./src/@types"],
     "resolveJsonModule": true,
     "allowJs": true,
     "outDir": "./dist",
@@ -12,11 +13,7 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitAny": true,
-    "strictPropertyInitialization": false,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "skipLibCheck": true,
-    "types": ["node"]
+    "strictPropertyInitialization": false
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist"],
