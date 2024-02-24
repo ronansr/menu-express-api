@@ -12,7 +12,7 @@ export const AppDataSource = new DataSource({
   username: process.env.TYPEORM_USERNAME,
   password: process.env.TYPEORM_PASSWORD,
   database: "postgres", //"test_orm",
-  entities: [`${__dirname}/**/entities/*.{ts, js}`],
-  migrations: [`${__dirname}/**/migrations/*.{ts, js}`],
+  entities: [`${__dirname}/**/entities/*.{ts,js}`],
+  migrations: [`${__dirname}/**/migrations/*.{ts,js}`],
   ssl: { rejectUnauthorized: false },
 });
